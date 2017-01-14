@@ -1,0 +1,9 @@
+{
+	"amWiki.create": "create a new wiki",
+	"amWiki.catalogue": "Insert catalogue",
+	// "amWiki.makeNav": "Manually update navigation",
+	"amWiki.pasteImg": "Paste screenshots",
+	// "amWiki.runServer": "Startup a local server",
+	"amWiki.browser": "Preview the page",
+	"amWiki.exportTogitHub": "Export the wiki library"
+}

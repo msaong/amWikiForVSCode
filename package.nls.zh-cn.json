@@ -1,0 +1,9 @@
+{
+	"amWiki.create": "基于当前config.json创建wiki",
+	"amWiki.catalogue": "插入页内目录",
+	// "amWiki.makeNav": "手动更新当前文库导航",
+	"amWiki.pasteImg": "粘帖截图到文档",
+	// "amWiki.runServer": "启动node.js静态服务器",
+	"amWiki.browser": "浏览当前页面",
+	"amWiki.exportTogitHub": "导出项目为github wiki"
+}

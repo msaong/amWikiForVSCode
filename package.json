@@ -25,37 +25,37 @@
 			{
 				//基于当前config.json创建wiki
 				"command": "amWiki.create",
-				"title": "基于当前config.json创建wiki"
+				"title": "%amWiki.create%"
 			},
 			{
 				//在当前文档上抓取h2、h3为页内目录
 				"command": "amWiki.catalogue",
-				"title": "插入页内目录"
+				"title": "%amWiki.catalogue%"
 			},
 			// {
 			// 	//手动更新当前文库导航
 			// 	"command": "amWiki.makeNav",
-			// 	"title": "手动更新当前文库导航"
+			// 	"title": "%amWiki.makeNav%"
 			// },
 			{
 				//粘帖截图
 				"command": "amWiki.pasteImg",
-				"title": "粘帖截图到文档"
+				"title": "%amWiki.pasteImg%"
 			},
 			// {
 			// 	//启动node静态服务器
 			// 	"command": "amWiki.runServer",
-			// 	"title": "启动node静态服务器"
+			// 	"title": "%amWiki.runServer%"
 			// },
 			{
 				//在浏览器中浏览当前页面
 				"command": "amWiki.browser",
-				"title": "浏览当前页面"
+				"title": "%amWiki.browser%"
 			},
 			{
 				//导出项目为 github wiki
 				"command": "amWiki.exportTogitHub",
-				"title": "导出项目为github wiki"
+				"title": "%amWiki.exportTogitHub%"
 			}
 		],
 		"menus": {
