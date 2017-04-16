@@ -15,6 +15,18 @@ Apm:
 [[view amWikiForVSCode on Github](https://github.com/YaoXuanZhi/amWikiForVSCode)]  
 [![](https://img.shields.io/github/stars/YaoXuanZhi/amWikiForVSCode.svg?style=social&label=Star)](https://github.com/YaoXuanZhi/amWikiForVSCode "GitHub Stars") [![](https://img.shields.io/github/forks/YaoXuanZhi/amWikiForVSCode.svg?style=social&label=Fork)](https://github.com/YaoXuanZhi/amWikiForVSCode "GitHub Forks") [![](https://img.shields.io/github/issues-raw/YaoXuanZhi/amWikiForVSCode.svg)](https://github.com/YaoXuanZhi/amWikiForVSCode "GitHub Open Issues") [![](https://img.shields.io/github/issues-closed-raw/YaoXuanZhi/amWikiForVSCode.svg)](https://github.com/YaoXuanZhi/amWikiForVSCode "GitHub Closed Issues") [![](https://img.shields.io/github/contributors/YaoXuanZhi/amWikiForVSCode.svg)](https://github.com/YaoXuanZhi/amWikiForVSCode "GitHub Contributors")
 
+## 在VSCode中安装amWiki插件
+
+1. 下载amWiki的VSCode移植版
+
+![image](https://cloud.githubusercontent.com/assets/14124918/22090378/346d2f64-de2c-11e6-9d54-17bd5b08ed0a.png)
+
+![image](https://cloud.githubusercontent.com/assets/14124918/22090471/c5b855c0-de2c-11e6-9c04-edfd5031b546.png)
+
+2. 直接将此移植版的目录拷贝到VSCode的插件安装目录，重启VSCode即可正常使用
+
+![image](https://cloud.githubusercontent.com/assets/14124918/22090431/7b41c328-de2c-11e6-9711-2831e21f44a1.png)
+
 ## 在VSCode中的使用演示
 - 创建新文库
 
