@@ -35,6 +35,13 @@
 	"categories": [
 		"Other"
 	],
+	"keywords": [
+		"amWiki",
+		"wiki",
+		"amWikiForVSCode"
+	],
+	"homepage": "https://github.com/YaoXuanZhi/amWikiForVSCode",
+	"icon": "images/logo.png",
 	"activationEvents": [
 		"onCommand:amWiki.create",
 		"onCommand:amWiki.catalogue",
