@@ -23,6 +23,8 @@ Apm:
 
 ![image](https://cloud.githubusercontent.com/assets/14124918/22090471/c5b855c0-de2c-11e6-9c04-edfd5031b546.png)
 
+![image](https://cloud.githubusercontent.com/assets/14124918/25070161/7b68d120-22c9-11e7-9b51-f33968ebc43d.png)
+
 2. 直接将此移植版的目录拷贝到VSCode的插件安装目录，重启VSCode即可正常使用
 
 ![image](https://cloud.githubusercontent.com/assets/14124918/22090431/7b41c328-de2c-11e6-9711-2831e21f44a1.png)
@@ -30,7 +32,19 @@ Apm:
 ## 在VSCode中的使用演示
 - 创建新文库
 
-> 先在一个文件夹下创建`config.json`文件，然后用`VSCode`打开此文件夹，此时在“`资源管理器`”上的`config.json`右击，执行右键菜单中的“基于config.json创建wiki”命令，即可在此文件夹下创建默认的amWiki文库，如下图所示：
+> 先在一个文件夹下创建`config.json`文件(utf-8编码)，然后用`VSCode`打开此文件夹，此时在“`资源管理器`”上的`config.json`右击，执行右键菜单中的“基于config.json创建wiki”命令，即可在此文件夹下创建默认的amWiki文库，如下图所示：
+
+- config.json文件内容模板
+```json
+{
+    "name": "your project",
+    "ver": "0.1",
+    "logo": "https://img.shields.io/apm/l/amWiki.svg",
+    "testing": true,
+    "github-url":"https://github.com/TevinLi/amWiki",
+    "colour": ""
+}
+```
 
 ![创建新文库](https://cloud.githubusercontent.com/assets/14124918/21590721/27c48c12-d139-11e6-8ee8-d8cc6c8136c3.gif)
 
