@@ -1,9 +1,7 @@
 {
-	"amWiki.create": "create a new wiki",
-	"amWiki.catalogue": "Insert catalogue",
-	// "amWiki.makeNav": "Manually update navigation",
-	"amWiki.pasteImg": "Paste screenshots",
-	// "amWiki.runServer": "Startup a local server",
-	"amWiki.browser": "Preview the page",
-	"amWiki.exportTogitHub": "Export the wiki library"
+	"amWiki.create": "create a new wiki base on config.json",
+	"amWiki.catalogue": "insert catalogue",
+	"amWiki.pasteImg": "parse image to document",
+	"amWiki.browser": "browser the current page",
+	"amWiki.exportTogitHub": "export to disk as a github wiki"
 }

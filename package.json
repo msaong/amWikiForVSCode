@@ -1,11 +1,36 @@
 {
 	"name": "amWiki",
 	"displayName": "amWikiForVSCode",
-	"description": "本项目是一款轻量型的wiki文库编辑器，通过移植Atom中的amWiki项目所得",
-	"version": "0.0.1",
-	"publisher": "耀轩之",
+	"description": "这是一款轻量型的wiki文库编辑器",
+	"version": "0.9.5",
+	"publisher": "dever-yaoxuanzhi",
+	"license": "MIT",
+	"author": {
+		"email": "yaoxuanzhi@outlook.com",
+		"name": "耀轩之",
+		"url": "https://github.com/YaoXuanZhi"
+	},
+	"contributors": [
+		{
+			"name": "TevinLi",
+			"url": "https://github.com/TevinLi/amWiki"
+		}
+	],
+   "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/YaoXuanZhi/amWikiForVSCode"
+	},
+	"bugs": {
+		"url": "https://github.com/YaoXuanZhi/amWikiForVSCode/issues",
+		"email": "yaoxuanzhi@outlook.com"
+	},
 	"engines": {
-		"vscode": "^0.10.1"
+		"vscode": "^0.10.1",
+		"node": ">6.0.0"
 	},
 	"categories": [
 		"Other"
@@ -13,9 +38,7 @@
 	"activationEvents": [
 		"onCommand:amWiki.create",
 		"onCommand:amWiki.catalogue",
-		// "onCommand:amWiki.makeNav",
 		"onCommand:amWiki.pasteImg",
-		// "onCommand:amWiki.runServer",
 		"onCommand:amWiki.browser",
 		"onCommand:amWiki.exportTogitHub"
 	],
@@ -23,45 +46,28 @@
 	"contributes": {
 		"commands": [
 			{
-				//基于当前config.json创建wiki
 				"command": "amWiki.create",
 				"title": "%amWiki.create%"
 			},
 			{
-				//在当前文档上抓取h2、h3为页内目录
 				"command": "amWiki.catalogue",
 				"title": "%amWiki.catalogue%"
 			},
-			// {
-			// 	//手动更新当前文库导航
-			// 	"command": "amWiki.makeNav",
-			// 	"title": "%amWiki.makeNav%"
-			// },
 			{
-				//粘帖截图
 				"command": "amWiki.pasteImg",
 				"title": "%amWiki.pasteImg%"
 			},
-			// {
-			// 	//启动node静态服务器
-			// 	"command": "amWiki.runServer",
-			// 	"title": "%amWiki.runServer%"
-			// },
 			{
-				//在浏览器中浏览当前页面
 				"command": "amWiki.browser",
 				"title": "%amWiki.browser%"
 			},
 			{
-				//导出项目为 github wiki
 				"command": "amWiki.exportTogitHub",
 				"title": "%amWiki.exportTogitHub%"
 			}
 		],
 		"menus": {
-			//定制文档编辑器上的右键菜单
 			"editor/context": [
-				//定制amWiki专属菜单组
 				{
 					"when": "resourceLangId == markdown",
 					"command": "amWiki.pasteImg",
@@ -83,37 +89,34 @@
 					"group": "amWikiMenu@4"
 				}
 			],
-			//定制资源管理器上的弹出菜单
 			"explorer/context": [
 				{
-					//点击此菜单项后响应的事件
 					"command": "amWiki.create",
-					//指定此菜单项出现在那个菜单群组上
 					"group": "navigation"
 				}
 			]
 		},
-		//绑定快捷键响应
 		"keybindings": [
 			{
 				"command": "amWiki.pasteImg",
-				//Windows下的快捷键设置
 				"key": "shift+ctrl+alt+v",
-				//Mac OS下的快捷键设置
 				"mac": "shift+ctrl+alt+v"
 			},
 			{
 				"when": "resourceLangId == markdown",
-				//此快捷键触发后所执行的事件
 				"command": "amWiki.browser",
-				//Windows下的快捷键设置
 				"key": "f12",
-				//Mac OS下的快捷键设置
 				"mac": "f12"
 			}
 		]
 	},
-	"devDependencies": {
-		"vscode": "0.10.x"
+    "devDependencies": {
+        "vscode": "^1.0.0",
+        "@types/node": "^6.0.40"
+    },
+	"__metadata": {
+		"id": "9cc31dd7-7ec4-4a46-bd4f-7d7b59d322a",
+		"publisherId": "dever-yaoxuanzhi",
+		"publisherDisplayName": "耀轩之"
 	}
 }
