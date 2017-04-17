@@ -360,6 +360,9 @@
                 url: that.request.url,
                 data: realParam,
                 dataType: 'text',
+                xhrFields: {
+                  withCredentials: true
+                },
                 success: function (data) {
                     $loading.hide();
                     $duration.text('耗时：' + parseFloat(Date.now() - startTime).toLocaleString() + ' ms');
