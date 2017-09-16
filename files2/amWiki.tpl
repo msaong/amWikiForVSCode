@@ -10,7 +10,6 @@
         <link rel="stylesheet" type="text/css" href="amWiki/css/markdownbody.github.css" />
         <link rel="stylesheet" type="text/css" href="amWiki/css/lhjs.github-gist.css" />
         <link rel="stylesheet" type="text/css" href="amWiki/css/amWiki.css" />
-        {{custom.css}}
     </head>
 
     <body>
@@ -44,7 +43,7 @@
                         <use xlink:href="#icon:search"></use>
                     </svg>
                 </div>
-                <nav class="menubar scroller" id="menuBar" data-x-rolling="true">
+                <nav class="menubar scroller" id="menuBar">
                     <div class="scroller-inner">
                         <div class="scroller-content"></div>
                     </div>
@@ -52,19 +51,7 @@
             </div>
             <div class="main scroller" id="main">
                 <div class="main-inner scroller-inner">
-                    <!-- 正文 -->
                     <article class="markdown-body scroller-content" id="view"></article>
-                    <script id="template:footnote" type="text/html">
-                        <sup><a href="#fn:foot{{index}}" name="fn:note{{index}}" title="{{title}}">[{{index}}]</a></sup>
-                        <ol class="footnote"><i>[参考资料]：</i>{{list}}</ol>
-                        <li id="fn:foot{{index}}">{{content}} {{back}}</li>
-                        <li class="footnote-none" data-msg="匹配缺失">{{content}}</li>
-                        <a href="#fn:note{{index}}">
-                            <svg>
-                                <use xlink:href="#icon:footnoteBack"></use>
-                            </svg>
-                        </a>
-                    </script>
                     <!-- 上下翻页 -->
                     <div class="main-sibling scroller-content" id="mainSibling">
                         <p><span>上一篇：</span>
@@ -80,7 +67,7 @@
                             <input type="button" id="searchUpdate" value="更新所有缓存" />
                             <div class="text">
                                 <p>上次完全更新：<time id="cacheLasttime">0000-00-00 00:00:00</time></p>
-                                <p>文档总数：<b id="cacheDocTotal">0</b> <i>/</i> <span>已缓存：<i id="cacheState">0%</i></span></p>
+                                <p>文档总数：<b id="cacheDocTotal">0</b> / <span>已缓存：<i id="cacheState">0%</i></span></p>
                             </div>
                         </div>
                         <h2>全库搜索</h2>
@@ -140,46 +127,27 @@
                 <a class="back-text" href="#">返回顶部</a>
             </div>
         </aside>
-        <!-- 图片预览 -->
-        <section class="imgsv" id="imgsView">
-            <div class="imgsv-background"></div>
-            <div class="imgsv-view" id="imgsViewInner"></div>
-            <ul class="imgsv-panel">
-                <li class="prev off">Prev</li>
-                <li class="next">Next</li>
-                <li class="original">1:1</li>
-                <li class="suit">适合</li>
-            </ul>
-        </section>
         <footer>
             <!-- 签名 -->
             <div class="signature">Powered by
                 <a href="https://github.com/TevinLi/amWiki" target="_blank">amWiki</a>
             </div>
         </footer>
-        <!-- mounts -->
-        <div class="hidden" aw-include="mountLinks">
-            <script>{{config}}</script>
-        </div>
         <!-- js -->
         <div class="hidden">
             <script type="text/javascript" src="amWiki/js/gbk.js"></script>
-            <script type="text/javascript" src="amWiki/js/pinyin.js"></script>
             <script type="text/javascript" src="amWiki/js/jquery-compat-3.1.0.min.js"></script>
             <script type="text/javascript" src="amWiki/js/marked.min.js"></script>
-            <script type="text/javascript" src="amWiki/js/highlight.pack.js"></script>
+            <script type="text/javascript" src="amWiki/js/highlight.min.js"></script>
             <script type="text/javascript" src="amWiki/js/raphael-min.js"></script>
             <script type="text/javascript" src="amWiki/js/flowchart.min.js"></script>
             <script type="text/javascript" src="amWiki/js/amWiki.tools.js"></script>
             <script type="text/javascript" src="amWiki/js/amWiki.storage.js"></script>
             <script type="text/javascript" src="amWiki/js/amWiki.search.js"></script>
-            <script type="text/javascript" src="amWiki/js/amWiki.search.worker.js"></script>
             <script type="text/javascript" src="amWiki/js/amWiki.docs.js"></script>
             {{amWiki.testing.js}}
             <script type="text/javascript" src="amWiki/js/amWiki.scrollbar.js"></script>
-            <script type="text/javascript" src="amWiki/js/amWiki.imgsView.js"></script>
             <script type="text/javascript" src="amWiki/js/amWiki.js"></script>
-            {{custom.js}}
         </div>
         <!-- svg -->
         <div class="hidden" id="svgSymbols"></div>
