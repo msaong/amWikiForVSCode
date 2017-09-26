@@ -45,6 +45,7 @@
 	"activationEvents": [
 		"onCommand:amWiki.create",
 		"onCommand:amWiki.catalogue",
+		"onCommand:amWiki.makeMut",
 		"onCommand:amWiki.pasteImg",
 		"onCommand:amWiki.browser",
 		"onCommand:amWiki.exportTogitHub"
@@ -59,6 +60,10 @@
 			{
 				"command": "amWiki.catalogue",
 				"title": "%amWiki.catalogue%"
+			},
+			{
+				"command": "amWiki.makeMut",
+				"title": "%amWiki.makeMut%"
 			},
 			{
 				"command": "amWiki.pasteImg",
@@ -87,13 +92,18 @@
 				},
 				{
 					"when": "resourceLangId == markdown",
-					"command": "amWiki.exportTogitHub",
+					"command": "amWiki.makeMut",
 					"group": "amWikiMenu@3"
 				},
 				{
 					"when": "resourceLangId == markdown",
-					"command": "amWiki.browser",
+					"command": "amWiki.exportTogitHub",
 					"group": "amWikiMenu@4"
+				},
+				{
+					"when": "resourceLangId == markdown",
+					"command": "amWiki.browser",
+					"group": "amWikiMenu@5"
 				}
 			],
 			"explorer/context": [
