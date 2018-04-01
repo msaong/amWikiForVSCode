@@ -16,10 +16,10 @@
 			"url": "https://github.com/TevinLi/amWiki"
 		}
 	],
-   "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
-    },
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/YaoXuanZhi/amWikiForVSCode"
@@ -48,7 +48,11 @@
 		"onCommand:amWiki.makeMut",
 		"onCommand:amWiki.pasteImg",
 		"onCommand:amWiki.browser",
-		"onCommand:amWiki.exportTogitHub"
+		"onCommand:amWiki.exportTogitHub",
+		"onCommand:amWiki.openTask",
+		"onCommand:amWiki.handTask",
+		"onCommand:amWiki.doneTask",
+		"onCommand:amWiki.cancelTask"
 	],
 	"main": "./lib/main",
 	"contributes": {
@@ -124,13 +128,33 @@
 				"command": "amWiki.browser",
 				"key": "f12",
 				"mac": "f12"
+			},
+			{
+				"command": "amWiki.openTask",
+				"key": "ctrl+alt+i",
+				"mac": "ctrl+alt+i"
+			},
+			{
+				"command": "amWiki.handTask",
+				"key": "ctrl+alt+j",
+				"mac": "ctrl+alt+j"
+			},
+			{
+				"command": "amWiki.doneTask",
+				"key": "ctrl+alt+k",
+				"mac": "ctrl+alt+k"
+			},
+			{
+				"command": "amWiki.cancelTask",
+				"key": "ctrl+alt+l",
+				"mac": "ctrl+alt+l"
 			}
 		]
 	},
-    "devDependencies": {
-        "vscode": "^1.0.0",
-        "@types/node": "^6.0.40"
-    },
+	"devDependencies": {
+		"vscode": "^1.0.0",
+		"@types/node": "^6.0.40"
+	},
 	"__metadata": {
 		"id": "9cc31dd7-7ec4-4a46-bd4f-7d7b59d322a",
 		"publisherId": "dever-yaoxuanzhi",
