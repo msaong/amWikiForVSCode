@@ -156,23 +156,23 @@
 			"properties": {
 				"amWiki.todo.open": {
 					"type": "string",
-					"default": "[+]",
-					"description": "Open Task ([+],☐)"
+					"default": "☐",
+					"description": "Open Task"
 				},
 				"amWiki.todo.handle": {
 					"type": "string",
-					"default": "[-]",
-					"description": "Handle Task ([-],❑)"
+					"default": "❑",
+					"description": "Handle Task"
 				},
 				"amWiki.todo.cancel": {
 					"type": "string",
-					"default": "[x]",
-					"description": "Cancel Task ([X],✘)"
+					"default": "✘",
+					"description": "Cancel Task"
 				},
 				"amWiki.todo.done": {
 					"type": "string",
-					"default": "[O]",
-					"description": "Done Task ([O], ✔)"
+					"default": "✔",
+					"description": "Done Task"
 				}
 			}
 		}
