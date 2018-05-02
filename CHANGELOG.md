@@ -1,5 +1,11 @@
 # amWiki 版本日志
 
+## v1.2.5
+_2018-05-02_
+
+- 添加todo快捷编辑功能
+- 采用mathjax.js支持latex公式渲染
+
 ## [v1.2.1](https://github.com/TevinLi/amWiki/releases/tag/v1.2.1)
 _2017-08-08_
 
