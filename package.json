@@ -2,7 +2,7 @@
 	"name": "amWiki",
 	"displayName": "amWikiForVSCode",
 	"description": "这是一款让VSCode化身为wiki编辑器的扩展",
-	"version": "1.0.0",
+	"version": "1.2.0",
 	"publisher": "dever-yaoxuanzhi",
 	"license": "MIT",
 	"author": {
