@@ -149,7 +149,33 @@
 				"key": "ctrl+alt+l",
 				"mac": "ctrl+alt+l"
 			}
-		]
+		],
+		"configuration": {
+			"type": "object",
+			"title": "amWiki Configuration",
+			"properties": {
+				"amWiki.todo.open": {
+					"type": "string",
+					"default": "[+]",
+					"description": "Open Task ([+],☐)"
+				},
+				"amWiki.todo.handle": {
+					"type": "string",
+					"default": "[-]",
+					"description": "Handle Task ([-],❑)"
+				},
+				"amWiki.todo.cancel": {
+					"type": "string",
+					"default": "[x]",
+					"description": "Cancel Task ([X],✘)"
+				},
+				"amWiki.todo.done": {
+					"type": "string",
+					"default": "[O]",
+					"description": "Done Task ([O], ✔)"
+				}
+			}
+		}
 	},
 	"devDependencies": {
 		"vscode": "^1.0.0",
