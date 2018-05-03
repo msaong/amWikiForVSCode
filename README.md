@@ -53,6 +53,6 @@ Apm:
 
 - 快捷编辑ToDoList
 
->提供**Ctrl+Alt**+**[i、j、k、l]**组合键来快速编辑ToDoList，当然，你也可以自定义快捷键，默认ToDo样式为：`☐, ❑, ✘, ✔`，当然，你也可以将它改成SublimeText的PlainTasks风格><
+>提供**Ctrl+Alt**+`[i|j|k|l]`组合键来快速编辑ToDoList，当然，你也可以自定义快捷键，默认ToDo样式为：`☐, ❑, ✘, ✔`，当然，你也可以将它改成SublimeText的PlainTasks风格><
 
 ![快捷编辑ToDoList](https://github.com/YaoXuanZhi/amWikiForVSCode/blob/master/res/Edit_todolist.gif)
