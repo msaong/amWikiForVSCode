@@ -46,6 +46,7 @@
 		"onCommand:amWiki.create",
 		"onCommand:amWiki.catalogue",
 		"onCommand:amWiki.makeMut",
+		"onCommand:amWiki.makeNav",
 		"onCommand:amWiki.pasteImg",
 		"onCommand:amWiki.browser",
 		"onCommand:amWiki.exportTogitHub",
@@ -80,6 +81,10 @@
 			{
 				"command": "amWiki.exportTogitHub",
 				"title": "%amWiki.exportTogitHub%"
+			},
+			{
+				"command": "amWiki.makeNav",
+				"title": "%amWiki.makeNav%"
 			}
 		],
 		"menus": {
